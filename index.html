@@ -13,13 +13,13 @@
 <body>
     <div class="top-section">
         <div class="sidebar">
-            <div>
+            <div class="content">
                 <i class="fa-brands fa-spotify"></i>
                 <i class="fa-solid fa-house"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-lines-leaning"></i>
             </div>
-            <div>                
+            <div class="content">                
                 <i class="fa-solid fa-arrow-down"></i>
                 <i class="fa-solid fa-circle-user"></i>
             </div>
@@ -31,6 +31,60 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident delectus quo, molestiae soluta molestias, obcaecati commodi sint harum, itaque dolore! Quasi ratione quae magnam, perferendis eligendi iusto adipisci. Molestiae?</p>
         </div>
     </div>
-    <div class="bottom-section"></div>
+    <div class="bottom-section">
+        <!-- Song Info Section -->
+        <div class="col-30">
+            <div class="content song-info">
+                <img src="./img/sinister.jpeg" alt="sinister">
+                <div>
+                    <p>Sinister</p>
+                    <ul>
+                        <li>Brano</li>
+                        <li>Nome</li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder-closed"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Media Control -->
+        <div class="col-40 media-control">
+            <div class="row">
+                <div class="content media-button">
+                    <div class="col-30">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="col-40">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div class="col-30">
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="content media-duration">
+                    <p>0:25</p>
+                    <div class="volume-secondary">
+                        <div class="volume-primary"></div>
+                    </div>
+                    <p>4:35</p>
+                </div>
+            </div>
+        </div>
+        <!-- Volume Control -->
+        <div class="col-30 volume-control">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="volume-secondary">
+                <div class="volume-primary"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
