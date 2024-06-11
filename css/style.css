@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.top-section {
+    height: calc(100vh - 100px);
+    background-color: red;
+    display: flex;
+}
+
+.bottom-section {
+    height: 100px;
+    background-color: blue;
+}
+
+.sidebar {
+    width: 75px;
+    background-color: black;
+}
+
+.main-content {
+    width: calc(100vw - 75px);
+    overflow-y: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}  
