@@ -19,6 +19,7 @@
     flex-direction: row;
     background-color: #282828;
     color: white;
+    column-gap: 20px;
 }
 
 .sidebar {
@@ -116,72 +117,64 @@ header button {
 }
 
 .song-info li {
-    font-size: 12px;
+    font-size: 8px;
     color: lightgray;
 }
 
-.volume-control .volume-secondary, .media-control .volume-primary {
+.song-info p {
+    font-size: 12px;
+}
+
+.volume-secondary {
     background-color: lightslategray;
     border-radius: 20px;
     width: 100%;
-    height: 5px;
+    height: 3px;
     margin: 0px 5px;
 }
 
-.volume-control .volume-primary, .media-control .volume-primary {
+.volume-primary {
     background-color: white;
     width: 40%;
-    height: 5px;
+    height: 2px;
     border-radius: 20px;
 }
 
 .volume-control i {
-    margin: 0px 5px;
-}
-
-.media-button .col-30 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: baseline;
-}
-
-.media-button .col-40 {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.media-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.media-duration, .media-button {
-    width: 100%;
-}
-
-.media-control .row {
-    background-color: pink;
-    width: 100%;
+    font-size: 10px;
+    margin: 0px 2px;
 }
 
 .media-control {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.media-button, .media-duration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.media-control * {
+    font-size: 10px;
+}
+
+.media-button i {
+    font-size: 20px;
 }
 
 
-
-
-
-
-
-
-
-
-
+/* *{border: 1px dashed red;} */
 
 /* Small [sm] */
 @media screen and (min-width: 576px) {
