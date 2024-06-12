@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Spotify</title>
 </head>
 <body>
+    <!-- TOP SECTION -->
     <div class="top-section">
+        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="content">
                 <i class="fa-brands fa-spotify invert-50"></i>
-                <i class="fa-solid fa-house" style="color: white"></i>
+                <i class="fa-solid fa-house" style="color: white;"></i>
                 <i class="fa-solid fa-magnifying-glass invert-50"></i>
                 <i class="fa-solid fa-lines-leaning invert-50"></i>
             </div>
@@ -24,11 +26,14 @@
                 <i class="fa-solid fa-circle-user invert-100"></i>
             </div>
         </div>
+        <!-- MAIN CONTENT -->
         <div class="main-content">
+            <!-- HEADER -->
             <header>
                 <button>EFFETTUA L'UPGRADE</button>
             </header>
-            <div class="nav-list">
+            <!-- NAV LIST -->
+            <nav class="nav-list">
                 <ul>
                     <li><a href="#">IN EVIDENZA<div class="green-line"></div></a></li>
                     <li><a href="#">PODCAST</a></li>
@@ -37,72 +42,80 @@
                     <li><a href="#">NUOVE USCITE</a></li>
                     <li><a href="#">SCOPRI</a></li>
                 </ul>
-            </div>
-            <div class="recently-played">
+            </nav>
+            <!-- RECENTLY PLAYED -->
+            <section class="recently-played">
                 <h2 class="col-100">Recently Played</h2>
+                <!-- Music Card 1 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/metal_lifting.jpg" alt="metal_lifting">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>Heavy Metal</h4>
-                            <p>Subtitle</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>Heavy Metal</h4>
+                        <p>Subtitle</p>
+                    </div>
                 </div>
+                <!-- Music Card 2 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/stranger.jpeg" alt="stranger">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrak)</h4>
-                            <p>Kyle Dixon & Michael Stein</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                        <p>Kyle Dixon & Michael Stein</p>
+                    </div>
                 </div>
+                <!-- Music Card 3 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/aquietplace.jpeg" alt="aquietplace">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>A quiet place</h4>
-                            <p>Subtitle</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>A Quiet Place</h4>
+                        <p>Subtitle</p>
+                    </div>
                 </div>
+                <!-- Music Card 4 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/split.jpeg" alt="split">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>Split</h4>
-                            <p>Subtitle</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>Split</h4>
+                        <p>Subtitle</p>
+                    </div>
                 </div>
+                <!-- Music Card 5 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/cure.jpeg" alt="cure">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>A cure for wellness</h4>
-                            <p>Subtitle</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>A Cure for Wellness</h4>
+                        <p>Subtitle</p>
+                    </div>
                 </div>
+                <!-- Music Card 6 -->
                 <div class="music-card col-50">
                     <div class="music-image">
                         <img src="./img/sinister.jpeg" alt="sinister">
                         <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="music-description">
-                            <h4>Sinister</h4>
-                            <p>Subtitle</p>
-                        </div>
+                    </div>
+                    <div class="music-description">
+                        <h4>Sinister</h4>
+                        <p>Subtitle</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
+    <!-- BOTTOM SECTION -->
     <div class="bottom-section">
         <!-- Song Info Section -->
         <div class="col-30">
@@ -124,11 +137,11 @@
         <!-- Media Control -->
         <div class="col-40 media-control">
             <div class="content media-button">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play" style="font-size: 25px;"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
             </div>
             <div class="content media-duration">
                 <p>0:25</p>
