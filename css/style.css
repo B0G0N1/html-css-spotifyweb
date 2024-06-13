@@ -95,7 +95,7 @@ header {
 
 .home p {
     display: none;
-    color: lightgrey;
+    color: gray;
     margin-left: 10px;
     font-weight: bold;
 }
@@ -302,9 +302,10 @@ header button {
     width: 40px;
 }
 
-.song-info .icon {
+.song-info .song-icon {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .song-info p, .song-info ul {
@@ -404,7 +405,7 @@ header button {
 }
 
 .invert-100 {
-    filter: invert(50%);
+    filter: invert(100%);
 }
 
 .circle {
@@ -468,7 +469,7 @@ header button:hover, .fa-circle-play:hover {
 }
 
 /* Sidebar */
-.sidebar i:hover:not(:nth-child(-n+2)) {
+.sidebar .menu:hover i {
     filter: invert(100%);
 }
 
@@ -541,12 +542,23 @@ SOPRA L'ICONA MI CREA UN LOOP */
     .home {
         margin: 30px 0px;
     }
-    .logo h2, .playlist > h2, .home p, .create,
+    .menu:first-of-type {
+        border-left: 5px solid greenyellow;
+        padding-left: 5px;
+    }
+    .menu:first-of-type, .logo h2, .playlist > h2, .home p, .create,
     .create, .install p, .user h4, .info hr {
         display: flex;
     }
     .playlist ul {
         display: block;
+    }
+    .volume-control .volume-secondary {
+        width: 40%;
+    }
+    .volume-control i {
+        font-size: 15px;
+        margin: 5px;
     }
 }
 
@@ -562,6 +574,20 @@ SOPRA L'ICONA MI CREA UN LOOP */
     .nav-list ul {
         column-gap: 50px;
         row-gap: 40px;
+    }
+    .media-button {
+        justify-content: center;
+    }
+    .media-button i{
+        margin: 0px 15px;
+    }
+    .volume-control {
+        justify-content: end;
+        margin-right: 10px;
+    }
+    .song-info .song-icon {
+        flex-direction: row;
+        column-gap: 10px;
     }
 }
 
