@@ -47,7 +47,6 @@ body {
     background-color: black;
     padding: 10px;
     height: calc(100vh - 100px);
-    z-index: -1;
 }
 
 header {
@@ -68,6 +67,10 @@ header {
 ---------------------------*/
 
 /* -- SIDEBAR -- */
+.sidebar {
+    overflow-y: auto;
+}
+
 .sidebar .content {
     display: flex;
     flex-direction: column;
@@ -77,12 +80,13 @@ header {
 .sidebar i {
     font-size: 25px;
     margin: 10px 0px;
+    color: gray;
 }
 
 .sidebar .fa-arrow-down {
     font-size: 10px;
     padding: 3px 4px;
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 50%;
 }
 
@@ -138,7 +142,7 @@ header {
 }
 
 .scroll-list {
-    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .install p {
@@ -188,13 +192,15 @@ header button {
     margin: 50px 10px;
 }
 
-.section-title > h2 {
+.section-title h2 {
     font-size: 25px;
+    margin: 0px 0px 5px 10px;
 }
 
-.section-title > p {
-    font-size: 10px;
+.section-title p {
+    font-size: 12px;
     color: gray;
+    margin: 0px 0px 5px 10px;
 }
 
 /* Nav List */
@@ -269,9 +275,8 @@ header button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 3em;
     color: white;
-    transition: display 0.3s;
 }
 
 .music-description {
@@ -400,14 +405,6 @@ header button {
     height: 100%;
 }
 
-.invert-50 {
-    filter: invert(50%);
-}
-
-.invert-100 {
-    filter: invert(100%);
-}
-
 .circle {
     border-radius: 50%;
 }
@@ -464,22 +461,27 @@ header button {
 ---------------------------*/
 
 /* Header */
-header button:hover, .fa-circle-play:hover {
+header button:hover, .bottom-section .fa-circle-play:hover {
     transform: scale(1.05);
 }
 
 /* Sidebar */
-.sidebar .menu:hover i {
-    filter: invert(100%);
+.menu:hover i, .menu:hover p{
+    color: white;
+}
+
+.create:hover .square {
+    background-color: white;
+}
+
+.create:hover p {
+    color: white;
 }
 
 /* Main Content */
-.music-image:hover i,
-.music-image i:hover {
-    display: flex;
+.music-image:hover i {
+    display: block;
 }
-/* NON FUNZIONA, QUANDO PASSO 
-SOPRA L'ICONA MI CREA UN LOOP */
 
 
 .music-image:hover img {
@@ -588,6 +590,12 @@ SOPRA L'ICONA MI CREA UN LOOP */
     .song-info .song-icon {
         flex-direction: row;
         column-gap: 10px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .section-title p {
+        font-size: 15px;
     }
 }
 
